@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <html>
 <body>
 <h2>Aprl-14, Jenkins CI-CD process and successfully deloyed "War" file in Tomcat and deploy to AWS Microservice!</h2>
