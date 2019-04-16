@@ -18,6 +18,24 @@
   <build>
     <finalName>JenkinsWar</finalName>
   </build>
-  
+  <repositories>
+    <repository>
+      <id>nexus</id>
+      <url>http://10.0.0.241:8081/repository/demo-maven-group/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Internal Releases</name>
+            <url>http://10.0.0.241:8081/repository/demo-maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://10.0.0.241:8081/repository/demo-maven-snapshpots/</url>
+        </snapshotRepository>
+   </distributionManagement>
 </project>
 
