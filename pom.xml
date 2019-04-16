@@ -4,7 +4,7 @@
   <groupId>com.jenkins.demo</groupId>
   <artifactId>JenkinsWar1</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>JenkinsWar Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -21,7 +21,7 @@
   <repositories>
     <repository>
       <id>nexus</id>
-      <url>http://10.0.0.241:8081/repository/demo-maven-group/</url>
+      <url>http://127.0.0.1:8081/repository/my-maven-group/</url>
     </repository>
   </repositories>
 
@@ -29,12 +29,12 @@
         <repository>
             <id>nexus</id>
             <name>Internal Releases</name>
-            <url>http://10.0.0.241:8081/repository/demo-maven-releases/</url>
+            <url>http://127.0.0.1:8081/repository/my-maven-release/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://10.0.0.241:8081/repository/demo-maven-snapshpots/</url>
+            <url>http://127.0.0.1:8081/repository/my-maven-snapshots//</url>
         </snapshotRepository>
    </distributionManagement>
 </project>
